@@ -1,449 +1,240 @@
-﻿<div align="center">
+<div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:071A2B,100:00FF88&height=220&section=header&text=FATIH&fontSize=70&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35&desc=AI%20%C3%97%20IoT%20%C3%97%20Embedded%20Systems&descAlignY=55&descSize=20&descColor=00FF88" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050B14,35:071A2B,70:003B32,100:00FF88&height=250&section=header&text=FATIH&fontSize=75&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35&desc=AI%20%E2%80%A2%20IoT%20%E2%80%A2%20EMBEDDED%20SYSTEMS&descAlignY=58&descSize=20&descColor=00FF88" width="100%"/>
 
-# Hi, I'm Fatih 👋
+<br>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00FF88&center=true&vCenter=true&width=700&lines=AI+%26+Computer+Vision+Developer;IoT+%26+Embedded+Systems+Developer;ESP32+%7C+Arduino+%7C+STM32;Building+Intelligent+Systems+from+Hardware+to+AI" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=23&duration=2500&pause=800&color=00FF88&center=true&vCenter=true&width=850&height=70&lines=AI+%26+Computer+Vision+Developer;IoT+%26+Embedded+Systems+Developer;ESP32+%7C+Arduino+%7C+STM32;Building+Intelligent+Systems;Turning+Hardware+Into+Intelligence..." />
 
-<p>
-  <a href="https://github.com/alfatih2025">
-    <img src="https://img.shields.io/github/followers/alfatih2025?style=for-the-badge&logo=github&label=Followers" />
-  </a>
-  <a href="https://github.com/alfatih2025?tab=repositories">
-    <img src="https://img.shields.io/badge/Repositories-Explore-00FF88?style=for-the-badge&logo=github" />
-  </a>
-</p>
+<br><br>
+
+<img src="https://komarev.com/ghpvc/?username=alfatih2025&label=PROFILE%20VIEWS&color=00ff88&style=for-the-badge" />
+
+<br><br>
+
+<a href="https://github.com/alfatih2025">
+<img src="https://img.shields.io/github/followers/alfatih2025?style=for-the-badge&logo=github&label=FOLLOWERS&color=00FF88&labelColor=0D1117" />
+</a>
+
+<a href="https://github.com/alfatih2025?tab=repositories">
+<img src="https://img.shields.io/github/stars/alfatih2025?style=for-the-badge&logo=github&label=STARS&color=00FF88&labelColor=0D1117" />
+</a>
 
 </div>
 
 ---
 
-## `$ whoami`
+<div align="center">
 
-I'm **Fatih**, a developer focused on building intelligent systems that connect **software, hardware, IoT, and artificial intelligence**.
-
-My main interests are:
-
-* Artificial Intelligence
-* Computer Vision
-* IoT Development
-* Embedded Systems
-* Microcontrollers
-* Robotics & Automation
-* Backend & Web Development
-* Intelligent Sensor Systems
-
-I enjoy turning an idea into a working system — starting from sensors and microcontrollers, connecting them through networks and cloud services, and finally adding software or AI on top of the system.
+## `SYSTEM INITIALIZATION`
 
 ```text
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
-│   HARDWARE                                                  │
-│      │                                                      │
-│      ├── Sensors                                             │
-│      ├── Arduino                                             │
-│      ├── ESP32                                               │
-│      └── STM32                                                │
-│            │                                                 │
-│            ▼                                                 │
-│         IoT / NETWORK                                        │
-│            │                                                 │
-│      ┌─────┼─────┐                                           │
-│      │     │     │                                           │
-│     MQTT  WiFi  API                                          │
-│      │     │     │                                           │
-│      └─────┼─────┘                                           │
-│            ▼                                                 │
-│       CLOUD / BACKEND                                        │
-│            │                                                 │
-│            ▼                                                 │
-│        WEB DASHBOARD                                         │
-│            │                                                 │
-│            ▼                                                 │
-│       ARTIFICIAL INTELLIGENCE                                │
+│   > booting developer.profile...                            │
+│                                                             │
+│   [████████████████████████████████████████] 100%           │
+│                                                             │
+│   ✓ AI MODULE...................... ONLINE                  │
+│   ✓ COMPUTER VISION................ ONLINE                  │
+│   ✓ IoT NETWORK.................... ONLINE                  │
+│   ✓ EMBEDDED SYSTEM................ ONLINE                  │
+│   ✓ CLOUD SERVICES................. ONLINE                  │
+│   ✓ SOFTWARE ENGINEERING........... ONLINE                  │
+│                                                             │
+│   SYSTEM STATUS: OPERATIONAL                                │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
----
+</div>
 
-## `$ tech-stack`
-
-### Programming Languages
-
-<p>
-<img src="https://skillicons.dev/icons?i=python,cpp,c,js,ts,php" />
-</p>
-
-### AI & Computer Vision
-
-<p>
-<img src="https://skillicons.dev/icons?i=python,opencv,tensorflow,pytorch" />
-</p>
-
-```text
-Python
-├── Computer Vision
-├── Machine Learning
-├── Automation
-├── AI Applications
-└── Data Processing
-```
-
-### IoT & Embedded Systems
-
-<p>
-<img src="https://skillicons.dev/icons?i=arduino,raspberrypi" />
-</p>
-
-```text
-Microcontrollers
-├── ESP32
-├── ESP8266
-├── Arduino
-├── STM32
-└── Raspberry Pi
-
-Communication
-├── MQTT
-├── HTTP / REST API
-├── WiFi
-├── ESP-NOW
-├── Serial
-└── I2C / SPI
-```
-
-### Web & Software Development
-
-<p>
-<img src="https://skillicons.dev/icons?i=react,vite,tailwind,nodejs,laravel,express" />
-</p>
-
-### Tools & Platforms
-
-<p>
-<img src="https://skillicons.dev/icons?i=git,github,vscode,docker,linux,vercel,supabase" />
-</p>
-
----
-
-# `$ featured-projects`
-
-## 🌱 NexaGrow
-
-**Intelligent Plant Monitoring & Water Efficiency Platform**
-
-NexaGrow is an IoT-based smart agriculture platform designed to monitor plant conditions and improve irrigation efficiency.
-
-```text
-Sensors
-   │
-   ▼
-Arduino
-   │
-   │ Serial
-   ▼
-ESP32 Gateway
-   │
-   ├──────── MQTT ────────► Cloud
-   │
-   ├──────── API ─────────► Backend
-   │
-   └──────── WiFi ────────► Dashboard
-                              │
-                              ▼
-                           AI Analysis
-```
-
-### Technology
-
-`Arduino` `ESP32` `MQTT` `React` `Vite` `Supabase` `AI` `BMKG API`
-
-### Features
-
-* Soil moisture monitoring
-* Temperature monitoring
-* Humidity monitoring
-* Automatic irrigation
-* Manual irrigation control
-* MQTT communication
-* Web dashboard
-* Weather integration
-* AI-based analysis
-* Sensor monitoring
-* Water efficiency analysis
-
----
-
-## 🌱 SPROUT
-
-**Smart CO₂ Regenerative Farming Pod**
-
-An experimental smart agriculture system combining environmental sensing, automation, and intelligent control.
-
-```text
-Environmental Sensors
-        │
-        ▼
-   Microcontroller
-        │
-        ▼
-  Data Processing
-        │
-   ┌────┴────┐
-   ▼         ▼
-Automation   AI
-   │         │
-   └────┬────┘
-        ▼
- Smart Farming System
-```
-
-### Technology
-
-`IoT` `Embedded Systems` `Sensors` `Automation` `AI`
-
----
-
-## 🤖 Computer Vision Projects
-
-Experiments involving:
-
-* Object detection
-* Hand tracking
-* Gesture recognition
-* Image processing
-* Real-time camera processing
-* AI-assisted interaction
-
-### Technology
-
-`Python` `OpenCV` `MediaPipe` `Computer Vision`
-
----
-
-# `$ embedded-systems`
-
-My embedded systems work focuses on connecting low-level hardware with intelligent software.
-
-```text
-ESP32
-├── GPIO
-├── ADC
-├── PWM
-├── WiFi
-├── Bluetooth
-├── MQTT
-├── ESP-NOW
-└── Web / Cloud Integration
-
-Arduino
-├── Sensors
-├── Actuators
-├── Relay
-├── Serial Communication
-├── I2C
-└── Automation
-
-STM32
-├── GPIO
-├── Timers
-├── PWM
-├── ADC
-├── UART
-├── SPI
-└── I2C
-```
-
----
-
-# `$ ai-development`
-
-I'm interested in building AI systems that interact with the physical world.
-
-```text
-             ┌───────────────┐
-             │     SENSOR    │
-             └───────┬───────┘
-                     │
-                     ▼
-             ┌───────────────┐
-             │      IoT      │
-             └───────┬───────┘
-                     │
-                     ▼
-             ┌───────────────┐
-             │      DATA     │
-             └───────┬───────┘
-                     │
-                     ▼
-             ┌───────────────┐
-             │      AI       │
-             └───────┬───────┘
-                     │
-                     ▼
-             ┌───────────────┐
-             │   DECISION    │
-             └───────┬───────┘
-                     │
-                     ▼
-             ┌───────────────┐
-             │   ACTUATOR    │
-             └───────────────┘
-```
-
-My long-term direction is to build systems where **AI doesn't just analyze data, but interacts with the physical environment through IoT and embedded systems.**
-
----
-
-# `$ github-stats`
+<br>
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=alfatih2025&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true" height="180"/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alfatih2025&layout=compact&theme=github_dark&hide_border=true&langs_count=8" height="180"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=alfatih2025&bg_color=0D1117&color=00FF88&line=00FF88&point=FFFFFF&area=true&hide_border=true" width="100%"/>
 
 </div>
 
 ---
 
-# `$ contribution-streak`
-
 <div align="center">
 
-<img src="https://streak-stats.demolab.com?user=alfatih2025&theme=github-dark-blue&hide_border=true" />
+## `TECHNOLOGY MATRIX`
+
+<img src="https://skillicons.dev/icons?i=python,cpp,c,js,ts,php,arduino,raspberrypi,react,vite,tailwind,nodejs,laravel,docker,linux,git,github,vscode,supabase,vercel&perline=10" />
+
+<br><br>
+
+<img src="https://skillicons.dev/icons?i=opencv,tensorflow,pytorch,mqtt,figma,postman,bash,powershell&perline=8" />
 
 </div>
 
 ---
 
-# `$ contribution-snake`
-
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/alfatih2025/alfatih2025/output/github-contribution-grid-snake.svg" width="100%" />
+## `AI × IoT × EMBEDDED`
+
+```text
+                         ┌─────────────┐
+                         │ ARTIFICIAL  │
+                         │ INTELLIGENCE│
+                         └──────┬──────┘
+                                │
+                                ▼
+                       ┌────────────────┐
+                       │  DATA / MODEL  │
+                       └───────┬────────┘
+                               │
+                               ▼
+        ┌──────────────┐  ┌──────────────┐  ┌──────────────┐
+        │     AI       │◄─┤     IoT      ├─►│   EMBEDDED   │
+        └──────────────┘  └──────┬───────┘  └──────────────┘
+                                 │
+                                 ▼
+                           ┌───────────┐
+                           │  ESP32    │
+                           │  ARDUINO  │
+                           │  STM32    │
+                           └─────┬─────┘
+                                 │
+                 ┌───────────────┼───────────────┐
+                 ▼               ▼               ▼
+              SENSORS         ACTUATORS       NETWORK
+```
 
 </div>
 
 ---
 
-# `$ currently-learning`
+<div align="center">
 
-```text
-[████████████████████░░]  Embedded Systems
+## `GITHUB TELEMETRY`
 
-[██████████████████░░░░]  Artificial Intelligence
+<br>
 
-[█████████████████░░░░░]  Computer Vision
+<img src="https://github-readme-stats.vercel.app/api?username=alfatih2025&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&theme=github_dark&bg_color=0D1117&title_color=00FF88&icon_color=00FF88&text_color=FFFFFF" height="190"/>
 
-[████████████████░░░░░░]  IoT Architecture
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alfatih2025&layout=compact&hide_border=true&langs_count=10&theme=github_dark&bg_color=0D1117&title_color=00FF88&text_color=FFFFFF" height="190"/>
 
-[██████████████░░░░░░░░]  Backend Development
+<br><br>
 
-[████████████░░░░░░░░░░]  System Design
-```
+<img src="https://streak-stats.demolab.com?user=alfatih2025&theme=github-dark-blue&hide_border=true&background=0D1117&ring=00FF88&fire=00FF88&currStreakLabel=00FF88" width="70%"/>
 
-Currently exploring:
-
-* Advanced ESP32 development
-* STM32 embedded programming
-* IoT architecture
-* MQTT systems
-* AI + IoT integration
-* Computer Vision
-* Backend systems
-* Cloud deployment
-* Automation
-* Robotics
+</div>
 
 ---
-
-# `$ development-philosophy`
-
-> **Build it. Break it. Understand it. Improve it.**
-
-I believe the fastest way to learn technology is to build real systems.
-
-Instead of learning each technology in isolation, I prefer connecting them:
-
-```text
-Electronics
-     ↓
-Embedded Systems
-     ↓
-IoT
-     ↓
-Cloud
-     ↓
-Software
-     ↓
-Artificial Intelligence
-```
-
-The goal is not simply to make code work.
-
-The goal is to understand **why the entire system works.**
-
----
-
-# `$ roadmap`
-
-```text
-                CURRENT
-                   │
-       ┌───────────┼───────────┐
-       ▼           ▼           ▼
-      AI          IoT       Embedded
-       │           │           │
-       └───────────┼───────────┘
-                   │
-                   ▼
-            Intelligent Systems
-                   │
-                   ▼
-              Robotics / AIoT
-                   │
-                   ▼
-             Autonomous Systems
-```
-
----
-
-# `$ connect`
 
 <div align="center">
+
+## `CONTRIBUTION MATRIX`
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=alfatih2025&custom_title=FATIH%20DEVELOPMENT%20ACTIVITY&bg_color=050B14&color=00FF88&line=00FF88&point=FFFFFF&area_color=003B32&area=true&hide_border=true" width="100%"/>
+
+</div>
+
+---
+
+<div align="center">
+
+## `CONTRIBUTION SNAKE`
+
+<img src="https://raw.githubusercontent.com/alfatih2025/alfatih2025/output/github-contribution-grid-snake.svg" width="100%"/>
+
+</div>
+
+---
+
+<div align="center">
+
+## `DEVELOPER TERMINAL`
+
+```text
+┌─────────────────────────────────────────────────────────────┐
+│  fatih@github:~$                                            │
+│                                                             │
+│  $ whoami                                                   │
+│  > fatih                                                     │
+│                                                             │
+│  $ role                                                      │
+│  > AI / IoT / Embedded Systems Developer                    │
+│                                                             │
+│  $ hardware                                                  │
+│  > ESP32 / ESP8266 / Arduino / STM32 / Raspberry Pi         │
+│                                                             │
+│  $ communication                                             │
+│  > MQTT / WiFi / ESP-NOW / HTTP / Serial / I2C / SPI       │
+│                                                             │
+│  $ intelligence                                              │
+│  > Python / OpenCV / Machine Learning / Computer Vision     │
+│                                                             │
+│  $ software                                                  │
+│  > React / Vite / Node.js / Laravel / Supabase              │
+│                                                             │
+│  $ status                                                     │
+│  > BUILDING...                                               │
+│                                                             │
+│  $ _                                                         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+</div>
+
+---
+
+<div align="center">
+
+## `ACTIVITY STATUS`
+
+<img src="https://img.shields.io/badge/AI-ACTIVE-00FF88?style=for-the-badge&logo=probot&logoColor=white&labelColor=0D1117" />
+
+<img src="https://img.shields.io/badge/IoT-ACTIVE-00FF88?style=for-the-badge&logo=esphome&logoColor=white&labelColor=0D1117" />
+
+<img src="https://img.shields.io/badge/EMBEDDED-ACTIVE-00FF88?style=for-the-badge&logo=arduino&logoColor=white&labelColor=0D1117" />
+
+<img src="https://img.shields.io/badge/COMPUTER%20VISION-ACTIVE-00FF88?style=for-the-badge&logo=opencv&logoColor=white&labelColor=0D1117" />
+
+<br><br>
+
+<img src="https://img.shields.io/badge/BUILDING-NEXT%20SYSTEM-00FF88?style=for-the-badge&logo=github&logoColor=white&labelColor=0D1117" />
+
+</div>
+
+---
+
+<div align="center">
+
+## `NETWORK`
 
 <a href="https://github.com/alfatih2025">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=00FF88"/>
 </a>
 
 <a href="https://www.linkedin.com/">
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+<img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=00FF88"/>
 </a>
+
+<br><br>
+
+```text
+╔══════════════════════════════════════════════════╗
+║                                                  ║
+║       BUILD • BREAK • LEARN • REBUILD            ║
+║                                                  ║
+║       HARDWARE  ×  SOFTWARE  ×  AI               ║
+║                                                  ║
+╚══════════════════════════════════════════════════╝
+```
 
 </div>
 
----
+<br>
 
 <div align="center">
 
-### `SYSTEM STATUS`
-
-```text
-┌────────────────────────────────────┐
-│                                    │
-│  ● ONLINE                           │
-│                                    │
-│  AI        : ACTIVE                 │
-│  IoT       : ACTIVE                 │
-│  EMBEDDED  : ACTIVE                 │
-│  BUILDING  : IN PROGRESS            │
-│                                    │
-└────────────────────────────────────┘
-```
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FF88,50:071A2B,100:0D1117&height=120&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FF88,40:003B32,75:071A2B,100:050B14&height=180&section=footer&animation=twinkling" width="100%"/>
 
 </div>
