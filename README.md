@@ -1,6 +1,10 @@
-<h1 align="center">
-  AL
-</h1>
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/alfatih2025/alfatih2025/output/header-al.gif"
+    width="1000"
+    alt="ALTECH Animated Header"
+  />
+</p>
 
 <p align="center">
   <strong>AI • IoT • EMBEDDED SYSTEMS • SOFTWARE DEVELOPMENT</strong>
