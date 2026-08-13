@@ -185,12 +185,11 @@ Working through a structured roadmap, one phase at a time:
 
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/alfatih2025/alfatih2025/output/cyber-contribution-grid.svg"
-    alt="Cyber Contribution Grid"
+    src="https://raw.githubusercontent.com/alfatih2025/alfatih2025/output/cyber-contribution-grid.gif"
+    alt="Animated Cyber Contribution Grid"
     width="900"
   />
 </p>
-
 ---
 
 <div align="center">
