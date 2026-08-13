@@ -1,5 +1,5 @@
 <h1 align="center">
-  ALTECH // DIGITAL SYSTEM
+  AL
 </h1>
 
 <p align="center">
