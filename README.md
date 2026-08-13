@@ -181,13 +181,15 @@ Working through a structured roadmap, one phase at a time:
 
 ---
 
-<div align="center">
+<h2>Cyber Contribution Grid</h2>
 
-## `CONTRIBUTION SNAKE`
-
-<img src="https://raw.githubusercontent.com/alfatih2025/alfatih2025/output/github-contribution-grid-snake.svg" width="100%"/>
-
-</div>
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/alfatih2025/alfatih2025/output/cyber-contribution-grid.svg"
+    alt="Cyber Contribution Grid"
+    width="900"
+  />
+</p>
 
 ---
 
