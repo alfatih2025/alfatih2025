@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:030712,30:0B1F3A,60:0E4D44,100:00FF88&height=280&section=header&text=FATIH&fontSize=80&fontColor=FFFFFF&animation=fadeIn&fontAlignY=32&desc=AI%20%C3%97%20IoT%20%C3%97%20Software%20Developer&descAlignY=52&descSize=20&descColor=00FF88" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:030712,30:0B1F3A,60:0E4D44,100:00FF88&height=280&section=header&text=AL&fontSize=80&fontColor=FFFFFF&animation=fadeIn&fontAlignY=32&desc=AI%20%C3%97%20IoT%20%C3%97%20Software%20Developer&descAlignY=52&descSize=20&descColor=00FF88" width="100%"/>
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=2600&pause=900&color=00FF88&center=true&vCenter=true&width=900&height=60&lines=AI+%26+Computer+Vision+Developer;IoT+%26+Embedded+Systems+Engineer;ESP32+%7C+Arduino+%7C+STM32;Turning+Hardware+Into+Intelligence;Currently+Building%3A+NexaGrow+%F0%9F%8C%B1" alt="Typing SVG" />
 
