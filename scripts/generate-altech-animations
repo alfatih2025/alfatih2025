@@ -1,0 +1,282 @@
+from pathlib import Path
+import math
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
+
+OUT = Path("dist")
+OUT.mkdir(exist_ok=True)
+
+W, H = 1000, 360
+FRAMES = 36
+DURATION = 80
+
+BG = (3, 7, 18)
+CYAN = (57, 217, 255)
+GREEN = (125, 255, 138)
+MUTED = (90, 120, 145)
+DARK = (7, 20, 34)
+
+def font(size):
+    candidates = [
+        "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf",
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    ]
+    for p in candidates:
+        if Path(p).exists():
+            return ImageFont.truetype(p, size)
+    return ImageFont.load_default()
+
+F10 = font(10)
+F12 = font(12)
+F16 = font(16)
+F24 = font(24)
+F30 = font(30)
+
+def glow_circle(base, x, y, r, color, alpha=180):
+    layer = Image.new("RGBA", base.size, (0, 0, 0, 0))
+    d = ImageDraw.Draw(layer)
+    d.ellipse((x-r*3, y-r*3, x+r*3, y+r*3), fill=(*color, alpha//3))
+    layer = layer.filter(ImageFilter.GaussianBlur(max(2, int(r*1.5))))
+    base.alpha_composite(layer)
+    d = ImageDraw.Draw(base)
+    d.ellipse((x-r, y-r, x+r, y+r), fill=(*color, 230))
+
+def background(draw):
+    draw.rectangle((0, 0, W, H), fill=BG)
+    for y in range(0, H, 5):
+        draw.line((0, y, W, y), fill=(5, 14, 25), width=1)
+    for x in range(0, W, 50):
+        draw.line((x, 0, x, H), fill=(4, 13, 23), width=1)
+
+def panel(draw, box, title):
+    x1, y1, x2, y2 = box
+    draw.rounded_rectangle(box, radius=14, outline=(18, 60, 78), width=2, fill=(4, 12, 24))
+    draw.text((x1+18, y1+15), title, font=F12, fill=GREEN)
+    draw.line((x1+18, y1+38, x2-18, y1+38), fill=(18, 60, 78), width=1)
+
+def save_gif(frames, filename):
+    frames[0].save(
+        OUT / filename,
+        save_all=True,
+        append_images=frames[1:],
+        duration=DURATION,
+        loop=0,
+        optimize=False,
+    )
+
+# ============================================================
+# 1. AI NEURAL CORE
+# ============================================================
+
+frames = []
+
+nodes = [
+    (500, 190),
+    (390, 130), (390, 250),
+    (610, 130), (610, 250),
+    (300, 190), (700, 190),
+    (500, 95), (500, 285),
+]
+
+edges = [
+    (0,1),(0,2),(0,3),(0,4),
+    (1,5),(2,5),(3,6),(4,6),
+    (1,7),(3,7),(2,8),(4,8),
+    (5,0),(6,0)
+]
+
+for f in range(FRAMES):
+    im = Image.new("RGBA", (W,H), BG + (255,))
+    d = ImageDraw.Draw(im)
+    background(d)
+
+    panel(d, (20, 20, 980, 340), "AI://NEURAL_CORE")
+
+    d.text((42, 75), "AI NEURAL CORE", font=F30, fill=CYAN)
+    d.text((42, 112), "SIGNAL PROPAGATION / INFERENCE ENGINE", font=F10, fill=MUTED)
+
+    # Edges
+    for a, b in edges:
+        x1,y1 = nodes[a]
+        x2,y2 = nodes[b]
+        d.line((x1,y1,x2,y2), fill=(18,70,90), width=2)
+
+    # Animated packets
+    for i, (a,b) in enumerate(edges):
+        x1,y1 = nodes[a]
+        x2,y2 = nodes[b]
+        t = ((f / FRAMES) + i / len(edges)) % 1
+        px = x1 + (x2-x1)*t
+        py = y1 + (y2-y1)*t
+        glow_circle(im, px, py, 3, CYAN, 150)
+
+    # Nodes
+    for i,(x,y) in enumerate(nodes):
+        color = GREEN if i == 0 else CYAN
+        pulse = 1 + 0.35*math.sin(f*0.35 + i)
+        glow_circle(im, x, y, 6*pulse, color, 120)
+        d = ImageDraw.Draw(im)
+        d.ellipse((x-4,y-4,x+4,y+4), fill=color)
+
+    d.text((390, 310), "● INFERENCE ONLINE", font=F12, fill=GREEN)
+    frames.append(im.convert("P"))
+
+save_gif(frames, "ai-neural-core.gif")
+
+# ============================================================
+# 2. IOT NETWORK
+# ============================================================
+
+frames = []
+
+devices = [
+    (100, 180, "SENSOR"),
+    (300, 180, "ESP32"),
+    (500, 180, "MQTT"),
+    (700, 180, "CLOUD"),
+    (900, 180, "WEB"),
+]
+
+for f in range(FRAMES):
+    im = Image.new("RGBA", (W,H), BG + (255,))
+    d = ImageDraw.Draw(im)
+    background(d)
+
+    panel(d, (20,20,980,340), "IOT://NETWORK")
+
+    d.text((42,75), "IoT NETWORK", font=F30, fill=CYAN)
+    d.text((42,112), "TELEMETRY / MQTT / CLOUD PIPELINE", font=F10, fill=MUTED)
+
+    # Connections
+    for i in range(len(devices)-1):
+        x1,y1,_ = devices[i]
+        x2,y2,_ = devices[i+1]
+        d.line((x1+55,y1,x2-55,y2), fill=(18,70,90), width=3)
+
+        t = ((f/FRAMES)*1.8 + i*0.25) % 1
+        px = x1+55+(x2-x1-110)*t
+        glow_circle(im, px, y1, 5, GREEN if i%2 else CYAN, 170)
+
+    # Devices
+    for i,(x,y,label) in enumerate(devices):
+        d.rounded_rectangle(
+            (x-55,y-30,x+55,y+30),
+            radius=10,
+            fill=(5,18,30),
+            outline=CYAN if i < 4 else GREEN,
+            width=2,
+        )
+        d.text((x-38,y-7), label, font=F10, fill=GREEN if i==4 else CYAN)
+
+    d.text((385,285), "● MQTT LINK STABLE", font=F12, fill=GREEN)
+    frames.append(im.convert("P"))
+
+save_gif(frames, "iot-network.gif")
+
+# ============================================================
+# 3. EMBEDDED BOOT TERMINAL
+# ============================================================
+
+frames = []
+
+lines = [
+    "> ALTECH EMBEDDED CORE",
+    "> INITIALIZING MCU........ OK",
+    "> SENSOR BUS............. OK",
+    "> I2C / UART / SPI....... OK",
+    "> MQTT CLIENT............ OK",
+    "> AI ENGINE.............. OK",
+    "> SYSTEM STATUS.......... ONLINE",
+]
+
+for f in range(FRAMES):
+    im = Image.new("RGBA", (W,H), BG + (255,))
+    d = ImageDraw.Draw(im)
+    background(d)
+
+    panel(d, (20,20,980,340), "EMBEDDED://BOOT_SEQUENCE")
+
+    d.text((42,75), "EMBEDDED SYSTEM", font=F30, fill=CYAN)
+    d.text((42,112), "BOOT / HARDWARE INITIALIZATION", font=F10, fill=MUTED)
+
+    visible = min(len(lines), max(1, f // 4 + 1))
+
+    for i in range(visible):
+        color = GREEN if i < visible-1 or visible == len(lines) else CYAN
+        d.text(
+            (60,145+i*24),
+            lines[i],
+            font=F12,
+            fill=color,
+        )
+
+    if visible == len(lines):
+        cursor = "_" if (f//2)%2 == 0 else " "
+        d.text((60, 145+len(lines)*24), cursor, font=F12, fill=GREEN)
+
+    frames.append(im.convert("P"))
+
+save_gif(frames, "embedded-boot.gif")
+
+# ============================================================
+# 4. CYBER RADAR
+# ============================================================
+
+frames = []
+
+cx, cy = 500, 190
+radius = 110
+
+for f in range(FRAMES):
+    im = Image.new("RGBA", (W,H), BG + (255,))
+    d = ImageDraw.Draw(im)
+    background(d)
+
+    panel(d, (20,20,980,340), "IOT://RADAR")
+
+    d.text((42,75), "CYBER RADAR", font=F30, fill=CYAN)
+    d.text((42,112), "DEVICE DISCOVERY / SIGNAL MONITOR", font=F10, fill=MUTED)
+
+    for r in [35,70,105]:
+        d.ellipse(
+            (cx-r,cy-r,cx+r,cy+r),
+            outline=(20,70,85),
+            width=1
+        )
+
+    d.line((cx-radius,cy,cx+radius,cy), fill=(20,70,85), width=1)
+    d.line((cx,cy-radius,cx,cy+radius), fill=(20,70,85), width=1)
+
+    angle = (f / FRAMES) * math.tau
+    ex = cx + radius * math.cos(angle)
+    ey = cy + radius * math.sin(angle)
+
+    d.line((cx,cy,ex,ey), fill=GREEN, width=3)
+
+    # detected devices
+    detections = [
+        (cx+62,cy-35),
+        (cx-72,cy+45),
+        (cx+20,cy+75),
+    ]
+
+    for i,(x,y) in enumerate(detections):
+        distance = abs(math.atan2(y-cy,x-cx)-angle)
+        distance = min(distance, math.tau-distance)
+        alpha = max(30, int(255*(1-distance/math.pi)))
+        glow_circle(im,x,y,5,CYAN,alpha)
+
+    glow_circle(im,cx,cy,7,GREEN,160)
+
+    d.text((390,310), "● 3 DEVICES DETECTED", font=F12, fill=GREEN)
+    frames.append(im.convert("P"))
+
+save_gif(frames, "cyber-radar.gif")
+
+print("Generated ALTECH animations:")
+for name in [
+    "ai-neural-core.gif",
+    "iot-network.gif",
+    "embedded-boot.gif",
+    "cyber-radar.gif",
+]:
+    print(" -", OUT / name)
