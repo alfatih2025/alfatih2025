@@ -312,7 +312,7 @@ for frame in range(FRAMES):
 
     draw.text(
         (45, 43),
-        "ALTECH // CORE SYSTEM",
+        "AL",
         font=FONT_SMALL,
         fill=GREEN
     )
