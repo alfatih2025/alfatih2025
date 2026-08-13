@@ -169,19 +169,8 @@ Working through a structured roadmap, one phase at a time:
 
 <div align="center">
 
-## `CONTRIBUTION MATRIX`
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=alfatih2025&custom_title=FATIH%20DEVELOPMENT%20ACTIVITY&bg_color=050B14&color=00FF88&line=00FF88&point=FFFFFF&area_color=003B32&area=true&hide_border=true" width="100%"/>
-
-<br><br>
-
-<img src="https://github-profile-trophy.vercel.app/?username=alfatih2025&theme=algolia&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" width="100%"/>
-
-</div>
-
----
-
-<h2>Cyber Contribution Grid</h2>
+## <h2>Cyber Contribution</h2>
 
 <p align="center">
   <img
