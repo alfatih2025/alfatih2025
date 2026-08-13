@@ -262,7 +262,12 @@ Working through a structured roadmap, one phase at a time:
 ```
 
 </div>
+📈 Activity Graph
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&hide_border=true&area=true&bg_color=0B0E1A&color=F72585&line=6C63FF&point=9D4EDD" width="100%" alt="Activity Graph"/> <br> ## 🐍 Contribution Snake  <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-contribution-grid-snake-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-contribution-grid-snake.svg" /> <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-contribution-grid-snake.svg" width="100%"/> </picture> --> <div align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:F72585,50:6C63FF,100:0B0E1A&height=150&section=footer" width="100%" alt="footer banner"/> <img src="https://komarev.com/ghpvc/?username=YOUR_USERNAME&color=6C63FF&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile views"/>
 
+<em>Thanks for stopping by — feel free to explore my repositories ⭐</em>
+
+</div>
 <br>
 
 <div align="center">
