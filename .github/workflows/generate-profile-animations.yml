@@ -2,10 +2,8 @@ name: Generate ALTECH Profile Animations
 
 on:
   workflow_dispatch:
-
   schedule:
     - cron: "0 0 * * *"
-
   push:
     branches:
       - main
@@ -18,7 +16,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -32,20 +29,26 @@ jobs:
           python -m pip install --upgrade pip
           pip install Pillow
 
-      - name: Generate all animations
+      - name: Generate ALTECH animations
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
         run: |
-          python scripts/generate-altech-animations.py
+          python scripts/generate-altech-animations
           python scripts/generate-cyber-grid.py
 
       - name: Verify generated files
         run: |
-          echo "Generated files:"
+          echo "=== GENERATED FILES ==="
           ls -lah dist/
+          test -f dist/ai-neural-core.gif
+          test -f dist/iot-network.gif
+          test -f dist/embedded-boot.gif
+          test -f dist/cyber-radar.gif
+          test -f dist/cyber-contribution-grid.gif
+          echo "=== ALL 5 ANIMATIONS EXIST ==="
 
-      - name: Publish animations
+      - name: Publish animations to output branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
