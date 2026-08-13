@@ -37,6 +37,7 @@ jobs:
           python scripts/generate-altech-animations
           python scripts/generate-cyber-grid.py
           python scripts/generate-software-animation.py
+          python scripts/generate-header-animation.py
       - name: Verify generated files
         run: |
           echo "=== GENERATED FILES ==="
@@ -47,6 +48,7 @@ jobs:
           test -f dist/cyber-radar.gif
           test -f dist/cyber-contribution-grid.gif
           test -f dist/software-development.gif
+          test -f dist/header-al.gif
           echo "=== ALL 5 ANIMATIONS EXIST ==="
 
       - name: Publish animations to output branch
