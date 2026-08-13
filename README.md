@@ -262,15 +262,7 @@ Working through a structured roadmap, one phase at a time:
 ```
 
 </div>
-<h2>Cyber Contribution Grid</h2>
 
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/alfatih2025/alfatih2025/output/cyber-contribution-grid.svg"
-    alt="Cyber Contribution Grid"
-    width="900"
-  />
-</p>
 <em>Thanks for stopping by — feel free to explore my repositories ⭐</em>
 
 </div>
